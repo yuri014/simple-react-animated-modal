@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { AnimatedModal } from 'simple-react-animated-modal';
+import AnimatedModal from 'simple-react-animated-modal';
 import 'simple-react-animated-modal/dist/index.css';
 
 const App = () => {
-  const [showModal, setShowModal] = React.useState(true);
+  const [showModal, setShowModal] = React.useState(false);
 
   return (
     <div>
@@ -15,12 +15,15 @@ const App = () => {
         onHide={() => setShowModal(false)}
         closeButton={<strong>X</strong>}
         style={{
-          backgroundColor: "#1e2939",
-          border: "2px solid #1cc5b7",
-          color: "white",
-          boxShadow: "2px 2px 4px black",
+          backgroundColor: '#1e2939',
+          border: '2px solid #1cc5b7',
+          color: 'white',
+          boxShadow: '2px 2px 4px black',
         }}
-        headBorderBottom="1px solid white"
+        headStyle={{
+          borderBottom: '1px solid white',
+          height: "3.2rem"
+        }}
       >
         <div className="modal-body">
           <p>This is an exemple.</p>
