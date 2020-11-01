@@ -5,7 +5,7 @@
 [![NPM](https://img.shields.io/npm/v/simple-react-animated-modal.svg)](https://www.npmjs.com/package/simple-react-animated-modal) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 <p align="center">
-  <img width="600" src="./screen/screen.gif">
+  <img width="500" src="./screen/screen.gif">
 </p>
 
 ## Install
