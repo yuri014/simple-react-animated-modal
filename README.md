@@ -19,7 +19,7 @@ npm install --save simple-react-animated-modal
 ```tsx
 import React from 'react';
 
-import MyComponent from 'simple-react-animated-modal';
+import AnimatedModal from 'simple-react-animated-modal';
 import 'simple-react-animated-modal/dist/index.css';
 
 function Example() {
