@@ -8,7 +8,6 @@ interface AnimatedModalProps {
   closeButton?: React.ReactNode | string;
   style?: React.CSSProperties | undefined;
   headStyle?: React.CSSProperties | undefined;
-  headBorderBottom?: string;
 }
 
 const AnimatedModal: React.FC<AnimatedModalProps> = (props) => {
