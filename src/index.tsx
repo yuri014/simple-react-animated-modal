@@ -7,20 +7,17 @@ interface AnimatedModalProps {
   title: string | React.ReactNode;
   closeButton?: React.ReactNode | string;
   style?: React.CSSProperties | undefined;
+  headStyle?: React.CSSProperties | undefined;
   headBorderBottom?: string;
 }
 
-export const AnimatedModal: React.FC<AnimatedModalProps> = (props) => {
-  const titleStyle = {
-    borderBottom: props.headBorderBottom,
-  };
-
+const AnimatedModal: React.FC<AnimatedModalProps> = (props) => {
   return (
     <div
       className={props.show ? styles.modalBlockTrue : styles.modalBlockFalse}
     >
       <div style={props.style} className={styles.modalContent}>
-        <div style={titleStyle} className={styles.modalHead}>
+        <div style={props.headStyle} className={styles.modalHead}>
           <span className={styles.modalTitle}>
             <h2>{props.title}</h2>
           </span>
@@ -33,3 +30,5 @@ export const AnimatedModal: React.FC<AnimatedModalProps> = (props) => {
     </div>
   );
 };
+
+export default AnimatedModal;
