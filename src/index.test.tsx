@@ -1,7 +1,7 @@
-import { ExampleComponent } from '.'
+import AnimatedModal from './index';
 
-describe('ExampleComponent', () => {
+describe('AnimatedModal', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
-  })
-})
+    expect(AnimatedModal).toBeTruthy();
+  });
+});
