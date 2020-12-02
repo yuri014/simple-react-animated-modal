@@ -16,6 +16,8 @@ npm install --save simple-react-animated-modal
 
 ## Usage
 
+Always place the AnimatedModal component at the bottom.
+
 ```tsx
 import React from 'react';
 
